@@ -85,4 +85,4 @@ const handleListen = () => {
   console.log(`Listening on http://localhost:3000`);
   wsServer.sockets.emit("room_change", publicRoom());
 };
-httpServer.listen(process.env.PORT, handleListen);
+httpServer.listen(3000, handleListen);
